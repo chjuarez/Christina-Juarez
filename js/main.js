@@ -9,15 +9,24 @@
   var SETTINGS = {
     // Scheduling page (Calendly, etc). When set, every "Book a Seller Call"
     // button opens it. When empty, the buttons jump to the contact form.
-    BOOKING_URL: '',
+    BOOKING_URL: 'https://tr.ee/ZnY98KdBWk',
 
     // Form service endpoint (Formspree, Basin, etc) that accepts a JSON POST.
-    // When empty, the form builds a ready-to-send text message instead.
     FORM_ENDPOINT: '',
+
+    // Google Form connection. The site's own form quietly submits into the
+    // Google Form, so visitors never leave the page.
+    //   GOOGLE_FORM_ACTION: https://docs.google.com/forms/d/e/<FORM_ID>/formResponse
+    //   GOOGLE_FORM_FIELDS: the "entry.123456" id of each question, taken
+    //   from the form's "Get pre-filled link".
+    // When neither this nor FORM_ENDPOINT is set, the form builds a
+    // ready-to-send text message instead.
+    GOOGLE_FORM_ACTION: '',
+    GOOGLE_FORM_FIELDS: { topic: '', name: '', phone: '', property: '', message: '' },
 
     // Link to the Google Business reviews page. When set, the
     // "Read all reviews on Google" link appears under the reviews.
-    GOOGLE_REVIEWS_URL: '',
+    GOOGLE_REVIEWS_URL: 'https://share.google/TVTxQz5ULJQaNZOAh',
 
     PHONE_E164: '+17609192548',
     PHONE_DISPLAY: '(760) 919-2548'
@@ -242,15 +251,30 @@
         return fail('Please add a phone number with area code.', form.elements.phone);
       }
 
+      var request = null;
       if (SETTINGS.FORM_ENDPOINT) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending…';
-        fetch(SETTINGS.FORM_ENDPOINT, {
+        request = fetch(SETTINGS.FORM_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(data)
-        }).then(function (res) {
-          if (!res.ok) throw new Error('Request failed');
+        });
+      } else if (SETTINGS.GOOGLE_FORM_ACTION) {
+        // Google Forms does not send a readable reply to other websites, so
+        // this request is "no-cors": it only fails if the network does.
+        var params = new URLSearchParams();
+        var ids = SETTINGS.GOOGLE_FORM_FIELDS;
+        var values = { topic: data.topicLabel, name: data.name, phone: data.phone, property: data.property, message: data.message };
+        Object.keys(ids).forEach(function (key) {
+          if (ids[key]) params.append(ids[key], values[key] || '');
+        });
+        request = fetch(SETTINGS.GOOGLE_FORM_ACTION, { method: 'POST', mode: 'no-cors', body: params });
+      }
+
+      if (request) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+        request.then(function (res) {
+          if (res.type !== 'opaque' && !res.ok) throw new Error('Request failed');
           form.reset();
           sent.hidden = false;
           sent.focus();

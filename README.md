@@ -19,7 +19,10 @@ To preview, open `index.html` in a browser, or run `python3 -m http.server` in t
 | Setting | What it does when filled in |
 | --- | --- |
 | `BOOKING_URL` | Every "Book a Seller Call" button opens this scheduling page. Empty: the buttons jump to the contact form. |
-| `FORM_ENDPOINT` | The contact form posts here (Formspree, Basin, etc). Empty: the form builds a ready-to-send text message to (760) 919-2548. |
+| `FORM_ENDPOINT` | The contact form posts here (Formspree, Basin, etc). |
+| `GOOGLE_FORM_ACTION` + `GOOGLE_FORM_FIELDS` | The contact form quietly submits into a Google Form. Needs the form's `formResponse` address and each question's `entry.…` id (from the form's "Get pre-filled link"). |
+
+With no form connection set, the contact form builds a ready-to-send text message to (760) 919-2548.
 | `GOOGLE_REVIEWS_URL` | Shows a "Read all reviews on Google" link under the reviews. |
 
 ## Before launch: replace every placeholder
@@ -34,7 +37,7 @@ Search `index.html` for `PLACEHOLDER` to find each one.
 - [ ] **Sold stories**: real closed sales only
 - [ ] **Meet Christina**: confirm the bio wording is accurate
 - [ ] **Locals Guide**: decide how it gets delivered (PDF, page, or text)
-- [ ] **Settings**: booking link, form service, Google reviews link
+- [ ] **Settings**: connect the contact form (booking link and Google reviews link are set)
 
 ## Content rules
 
