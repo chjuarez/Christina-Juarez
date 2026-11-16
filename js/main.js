@@ -318,8 +318,41 @@
     }
   }
 
+  /* ---------- Hero video ----------
+     Plays silently on a loop. It stays a still photo for visitors who ask
+     for reduced motion or data saving, and anyone can pause or play it. */
+  var heroVideo = $('[data-hero-video]');
+  var videoToggle = $('[data-video-toggle]');
+  if (heroVideo && videoToggle) {
+    var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var saver = navigator.connection && navigator.connection.saveData;
+
+    var syncToggle = function () {
+      var playing = !heroVideo.paused;
+      videoToggle.classList.toggle('is-playing', playing);
+      videoToggle.setAttribute('aria-label', playing ? 'Pause video' : 'Play video');
+    };
+    heroVideo.addEventListener('play', syncToggle);
+    heroVideo.addEventListener('pause', syncToggle);
+    videoToggle.addEventListener('click', function () {
+      if (heroVideo.paused) {
+        var started = heroVideo.play();
+        if (started && started.catch) started.catch(function () {});
+      } else {
+        heroVideo.pause();
+      }
+    });
+    videoToggle.hidden = false;
+
+    if (!calm && !saver) {
+      heroVideo.muted = true;
+      var auto = heroVideo.play();
+      if (auto && auto.catch) auto.catch(function () {});
+    }
+  }
+
   /* ---------- Gentle scroll reveal ---------- */
-  var revealables = $$('.section__head, .door, .step, .hub__card, .file, .intent, .review, .sold__card, .meet__copy, .quiz, .contact');
+  var revealables = $$('.section__head, .sellers-intro__photo, .door, .step, .hub__card, .file, .intent, .review, .sold__card, .meet__copy, .quiz, .contact');
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if ('IntersectionObserver' in window && !reduce) {
     var io = new IntersectionObserver(function (entries) {

@@ -11,6 +11,7 @@ Plain HTML, CSS, and a small script. No build step, no dependencies.
 | `css/styles.css` | Styles (mobile-first) |
 | `js/main.js` | Menu, quiz, contact form, and the three settings below |
 | `assets/fonts/` | Fraunces and Inter, self-hosted (SIL Open Font License) |
+| `assets/img/`, `assets/video/` | Christina's photos and the hero video, resized for the web |
 
 To preview, open `index.html` in a browser, or run `python3 -m http.server` in this folder.
 
@@ -29,7 +30,7 @@ With no form connection set, the contact form builds a ready-to-send text messag
 
 Search `index.html` for `PLACEHOLDER` to find each one.
 
-- [ ] **Photos**: every block marked "Photo placeholder" (hero, spotlight, listings, browse tiles, sold stories, portrait)
+- [ ] **Photos**: every block still marked "Photo placeholder" (local spotlight, listings, Homes and Pauma Valley tiles, sold stories)
 - [ ] **Events**: real names, dates, and details in Very Valley Center
 - [ ] **Local Spotlight**: a real local business or place, with their permission
 - [ ] **Country Property Files**: real listings only (real address, price, specs)

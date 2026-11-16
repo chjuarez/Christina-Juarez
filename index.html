@@ -81,10 +81,16 @@
           <p class="hero__license">Christina Holly Juarez, Broker &middot; CA DRE #01832633</p>
         </div>
 
-        <!-- PHOTO PLACEHOLDER: replace with <img> of Christina on a Valley Center property -->
-        <figure class="ph ph--arch hero__photo" role="img" aria-label="Photo placeholder: Christina on a Valley Center property">
-          <span class="ph__tag">Photo placeholder</span>
-          <span class="ph__note">Christina on a Valley Center property</span>
+        <figure class="media media--arch media--framed hero__photo">
+          <video class="media__fill" data-hero-video muted loop playsinline preload="none"
+                 poster="assets/img/hero-land-poster.jpg" width="720" height="900"
+                 aria-label="Christina standing on open land with a valley and mountains behind her">
+            <source src="assets/video/hero-land.mp4" type="video/mp4">
+          </video>
+          <button class="media__toggle" type="button" data-video-toggle hidden aria-label="Play video">
+            <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5L8 5.5Z"/></svg>
+            <svg class="icon icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
+          </button>
         </figure>
       </div>
     </section>
@@ -144,11 +150,17 @@
     <!-- ============ 4. HOW LISTING WITH ME WORKS ============ -->
     <section class="section section--sand" id="how-it-works">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">For sellers</p>
-          <h2>How listing with me works</h2>
-          <p class="section__lede">Four steps. You always know which one you&rsquo;re on.</p>
-        </header>
+        <div class="sellers-intro">
+          <header class="section__head">
+            <p class="eyebrow">For sellers</p>
+            <h2>How listing with me works</h2>
+            <p class="section__lede">Four steps. You always know which one you&rsquo;re on.</p>
+          </header>
+          <figure class="media media--square sellers-intro__photo">
+            <img class="media__fill" src="assets/img/christina-for-sale-sign.jpg" width="900" height="900" loading="lazy" decoding="async"
+                 alt="Christina smiling beside her For Sale sign, which reads Christina Holly Juarez Realty, Broker/Owner">
+          </figure>
+        </div>
 
         <ol class="steps">
           <li class="step">
@@ -354,8 +366,9 @@
             </span>
           </a>
           <a class="intent" href="#contact" data-interest="land">
-            <figure class="ph ph--tile" role="img" aria-label="Photo placeholder: open land">
-              <span class="ph__tag">Photo placeholder</span>
+            <figure class="media media--tile">
+              <img class="media__fill" src="assets/img/land-view.jpg" width="720" height="540" loading="lazy" decoding="async"
+                   alt="Open land with chaparral and yucca, and mountains in the distance">
             </figure>
             <span class="intent__body">
               <strong>Land</strong>
@@ -363,8 +376,9 @@
             </span>
           </a>
           <a class="intent" href="#contact" data-interest="horse">
-            <figure class="ph ph--tile" role="img" aria-label="Photo placeholder: horse property">
-              <span class="ph__tag">Photo placeholder</span>
+            <figure class="media media--tile">
+              <img class="media__fill" src="assets/img/christina-horse.jpg" width="800" height="600" loading="lazy" decoding="async"
+                   alt="Christina in a western hat greeting a horse over a corral rail">
             </figure>
             <span class="intent__body">
               <strong>Horse Property</strong>
@@ -456,10 +470,9 @@
     <!-- ============ 9. MEET CHRISTINA ============ -->
     <section class="section section--green" id="meet-christina">
       <div class="wrap meet">
-        <!-- PHOTO PLACEHOLDER: portrait of Christina -->
-        <figure class="ph ph--arch ph--on-green meet__photo" role="img" aria-label="Photo placeholder: portrait of Christina">
-          <span class="ph__tag">Photo placeholder</span>
-          <span class="ph__note">Portrait of Christina</span>
+        <figure class="media media--arch media--framed meet__photo">
+          <img class="media__fill" src="assets/img/christina-pumpkin-wagon.jpg" width="900" height="1125" loading="lazy" decoding="async"
+               alt="Christina sitting on an old farm wagon surrounded by pumpkins and hay bales">
         </figure>
 
         <div class="meet__copy">
@@ -684,6 +697,7 @@
         <li><a href="tel:+17609192548">Call (760) 919-2548</a></li>
         <li><a href="sms:+17609192548">Text (760) 919-2548</a></li>
         <li><a href="#contact" data-book>Book a Seller Call</a></li>
+        <li><a href="https://www.instagram.com/christinahollyjuarez/" target="_blank" rel="noopener">Instagram @christinahollyjuarez</a></li>
       </ul>
     </div>
     <div class="wrap site-footer__legal">
