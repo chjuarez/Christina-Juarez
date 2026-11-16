@@ -21,8 +21,14 @@
     //   from the form's "Get pre-filled link".
     // When neither this nor FORM_ENDPOINT is set, the form builds a
     // ready-to-send text message instead.
-    GOOGLE_FORM_ACTION: '',
-    GOOGLE_FORM_FIELDS: { topic: '', name: '', phone: '', property: '', message: '' },
+    GOOGLE_FORM_ACTION: 'https://docs.google.com/forms/d/e/1FAIpQLSeQgsjVRLPyLqqitj1SVISVDk7QsKPOSNsh_STlYmG1ManHTA/formResponse',
+    GOOGLE_FORM_FIELDS: {
+      topic: 'entry.683012973',     // What can I help with?
+      name: 'entry.1602637018',     // Name
+      phone: 'entry.1734446946',    // Phone
+      property: 'entry.957794123',  // Property address or area
+      message: 'entry.274385600'    // Message
+    },
 
     // Link to the Google Business reviews page. When set, the
     // "Read all reviews on Google" link appears under the reviews.

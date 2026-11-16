@@ -24,6 +24,8 @@ To preview, open `index.html` in a browser, or run `python3 -m http.server` in t
 | `GOOGLE_FORM_ACTION` + `GOOGLE_FORM_FIELDS` | The contact form quietly submits into a Google Form. Needs the form's `formResponse` address and each question's `entry.…` id (from the form's "Get pre-filled link"). |
 
 With no form connection set, the contact form builds a ready-to-send text message to (760) 919-2548.
+
+The Google Form's questions must stay as they are (same questions, all text answers). Deleting a question, changing its type, or turning on "Collect email addresses" or "Limit to 1 response" will break submissions from the site.
 | `GOOGLE_REVIEWS_URL` | Shows a "Read all reviews on Google" link under the reviews. |
 
 ## Before launch: replace every placeholder
@@ -38,7 +40,7 @@ Search `index.html` for `PLACEHOLDER` to find each one.
 - [ ] **Sold stories**: real closed sales only
 - [ ] **Meet Christina**: confirm the bio wording is accurate
 - [ ] **Locals Guide**: decide how it gets delivered (PDF, page, or text)
-- [ ] **Settings**: connect the contact form (booking link and Google reviews link are set)
+- [x] **Settings**: booking link, Google reviews link, and the Google Form ("Website requests") are connected
 
 ## Content rules
 
