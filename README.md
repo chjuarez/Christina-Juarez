@@ -52,5 +52,7 @@ Search `index.html` for `PLACEHOLDER` to find each one.
 ## Brand
 
 - Deep Eucalyptus `#1F3D2B`, Warm Cream `#FAF7F0`, Muted Gold `#C9A227`
+- Supporting colors from the land in the photos: Granite Sand `#EEE5D2` (alternate background), Manila `#E4D6B0` (property file folders), Chaparral Sage `#A7B198` (quiet lines and placeholders)
+- Gold is kept for buttons and actions
 - Fraunces for headlines, Inter for body
 - Tagline: *Small by design. Personal by default.*

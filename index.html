@@ -43,7 +43,7 @@
     <div class="wrap site-header__row">
       <a class="brand" href="#top" aria-label="Christina Holly Juarez Realty, home">
         <span class="brand__name">Christina Holly Juarez</span>
-        <span class="brand__sub">Realty &middot; Valley Center &amp; Pauma Valley</span>
+        <span class="brand__sub">Realty, Valley Center &amp; Pauma Valley</span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -66,82 +66,62 @@
 
   <main id="main">
 
-    <!-- ============ 1. HERO (seller-first) ============ -->
+    <!-- ============ 1. HERO ============ -->
     <section class="hero" id="top">
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow eyebrow--gold">Valley Center &amp; Pauma Valley, California</p>
-          <h1>Selling in Valley Center? <em>Let&rsquo;s skip the boring version.</em></h1>
-          <p class="hero__lede">One broker. One phone number. A plan built around your property, and an update every Sunday until it closes.</p>
-          <div class="hero__actions">
-            <a class="btn btn--gold" href="#contact" data-book>Book a Seller Call</a>
-            <a class="btn btn--ghost-light" href="tel:+17609192548">Call or text (760)&nbsp;919-2548</a>
-          </div>
-          <p class="hero__tagline">Small by design. Personal by default.</p>
-          <p class="hero__license">Christina Holly Juarez, Broker &middot; CA DRE #01832633</p>
+      <div class="hero__copy">
+        <h1 class="hero__title">Selling in Valley&nbsp;Center? Let&rsquo;s skip the boring&nbsp;version.</h1>
+        <p class="hero__lede">One broker. One phone number. A plan built around your property, and an update every Sunday until it closes.</p>
+        <div class="hero__actions">
+          <a class="btn btn--gold" href="#contact" data-book>Book a Seller Call</a>
+          <a class="btn btn--line-light" href="tel:+17609192548">Call or text (760)&nbsp;919-2548</a>
         </div>
+        <p class="hero__plate">
+          <span class="hero__tagline">Small by design. Personal by default.</span>
+          <span>Christina Holly Juarez, Broker, CA DRE #01832633</span>
+        </p>
+      </div>
 
-        <figure class="media media--arch media--framed hero__photo">
-          <video class="media__fill" data-hero-video muted loop playsinline preload="none"
-                 poster="assets/img/hero-land-poster.jpg" width="720" height="900"
-                 aria-label="Christina standing on open land with a valley and mountains behind her">
-            <source src="assets/video/hero-land.mp4" type="video/mp4">
-          </video>
-          <button class="media__toggle" type="button" data-video-toggle hidden aria-label="Play video">
-            <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5L8 5.5Z"/></svg>
-            <svg class="icon icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
-          </button>
-        </figure>
+      <figure class="hero__media">
+        <video class="hero__video" data-hero-video muted loop playsinline preload="none"
+               poster="assets/img/hero-land-poster.jpg" width="720" height="900"
+               aria-label="Christina standing on open land with a valley and mountains behind her">
+          <source src="assets/video/hero-land.mp4" type="video/mp4">
+        </video>
+        <button class="media__toggle" type="button" data-video-toggle hidden aria-label="Play video">
+          <svg class="icon icon--play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5L8 5.5Z"/></svg>
+          <svg class="icon icon--pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
+        </button>
+      </figure>
+    </section>
+
+    <!-- ============ 2. CREDENTIALS ============ -->
+    <section class="creds" aria-label="Credentials">
+      <div class="wrap">
+        <p class="creds__line">Licensed in California since 2007. A broker since 2014. Lives and works in Valley&nbsp;Center.</p>
       </div>
     </section>
 
-    <!-- ============ 2. PROOF BAR ============ -->
-    <section class="proof" aria-label="Credentials">
+    <!-- ============ 3. START HERE ============ -->
+    <section class="section" id="start-here">
       <div class="wrap">
-        <ul class="proof__list">
-          <li>
-            <span class="proof__big">2007</span>
-            <span class="proof__label">Licensed in California</span>
-          </li>
-          <li>
-            <span class="proof__big">2014</span>
-            <span class="proof__label">Broker since</span>
-          </li>
-          <li>
-            <span class="proof__big proof__big--text">Valley Center</span>
-            <span class="proof__label">Lives here, works here</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============ 3. START HERE DOORS ============ -->
-    <section class="section section--cream" id="start-here">
-      <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Start here</p>
-          <h2>Pick a door.</h2>
-          <p class="section__lede">Three ways in. Each one ends with a real conversation, not a drip campaign.</p>
-        </header>
+        <h2 class="section__title">Pick a door.</h2>
+        <p class="section__lede">Three ways in. Each one ends with a real conversation, not a drip campaign.</p>
 
         <div class="doors">
           <a class="door" href="#how-it-works">
-            <span class="door__num">01</span>
             <h3>Selling</h3>
             <p>A home, a ranch, a grove, or acreage. See how listing with me works, then book a Seller Call.</p>
-            <span class="door__go">How it works <span aria-hidden="true">&rarr;</span></span>
+            <span class="door__go">How it works</span>
           </a>
           <a class="door" href="#property-files">
-            <span class="door__num">02</span>
             <h3>Buying</h3>
             <p>Country property with the details up front: real address, price, and specs. No guessing games.</p>
-            <span class="door__go">Open the Property Files <span aria-hidden="true">&rarr;</span></span>
+            <span class="door__go">Open the Property Files</span>
           </a>
           <a class="door" href="#contact" data-interest="land">
-            <span class="door__num">03</span>
             <h3>Land</h3>
             <p>Lots and acreage, where water, access, and zoning decide what&rsquo;s possible. Tell me what you have in mind.</p>
-            <span class="door__go">Talk land <span aria-hidden="true">&rarr;</span></span>
+            <span class="door__go">Talk land</span>
           </a>
         </div>
       </div>
@@ -149,54 +129,49 @@
 
     <!-- ============ 4. HOW LISTING WITH ME WORKS ============ -->
     <section class="section section--sand" id="how-it-works">
-      <div class="wrap">
-        <div class="sellers-intro">
-          <header class="section__head">
-            <p class="eyebrow">For sellers</p>
-            <h2>How listing with me works</h2>
-            <p class="section__lede">Four steps. You always know which one you&rsquo;re on.</p>
-          </header>
-          <figure class="media media--square sellers-intro__photo">
-            <img class="media__fill" src="assets/img/christina-for-sale-sign.jpg" width="900" height="900" loading="lazy" decoding="async"
+      <div class="wrap sellers">
+        <div class="sellers__aside">
+          <h2 class="section__title">How listing with me works</h2>
+          <p class="section__lede">Four steps. You always know which one you&rsquo;re on.</p>
+          <figure class="sellers__photo">
+            <img src="assets/img/christina-for-sale-sign.jpg" width="900" height="900" loading="lazy" decoding="async"
                  alt="Christina smiling beside her For Sale sign, which reads Christina Holly Juarez Realty, Broker/Owner">
           </figure>
         </div>
 
-        <ol class="steps">
-          <li class="step">
-            <span class="step__num" aria-hidden="true">1</span>
-            <div class="step__body">
+        <div class="sellers__main">
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
               <h3>Seller Call</h3>
               <p>A straight conversation about your property, your timing, and what you want out of the sale. Ask me anything.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__num" aria-hidden="true">2</span>
-            <div class="step__body">
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
               <h3>Walk + Prep Plan</h3>
               <p>I walk the property with you: house, land, outbuildings, all of it. You get a prep plan that says what to do and what to skip.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__num" aria-hidden="true">3</span>
-            <div class="step__body">
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
               <h3>Film + Price + Launch</h3>
               <p>We film the property, set the price with the reasoning laid out where you can see it, and launch.</p>
-            </div>
-          </li>
-          <li class="step">
-            <span class="step__num" aria-hidden="true">4</span>
-            <div class="step__body">
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">4</span>
               <h3>Show, Negotiate, Close</h3>
               <p>I handle showings and negotiation through closing.</p>
-              <p class="step__extra"><strong>Plus the Sunday update.</strong> Every Sunday you hear from me, so you never have to wonder what&rsquo;s happening.</p>
-            </div>
-          </li>
-        </ol>
+            </li>
+          </ol>
 
-        <div class="section__cta">
-          <a class="btn btn--green" href="#contact" data-book>Book a Seller Call</a>
-          <a class="link-arrow" href="sms:+17609192548">or text (760)&nbsp;919-2548</a>
+          <div class="sunday">
+            <h3>Plus the Sunday update.</h3>
+            <p>Every Sunday you hear from me, so you never have to wonder what&rsquo;s happening.</p>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn--green" href="#contact" data-book>Book a Seller Call</a>
+            <a class="text-link" href="sms:+17609192548">or text (760)&nbsp;919-2548</a>
+          </div>
         </div>
       </div>
     </section>
@@ -204,139 +179,117 @@
     <!-- ============ 5. VERY VALLEY CENTER HUB ============ -->
     <section class="section section--green" id="very-valley-center">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow eyebrow--gold">The local hub</p>
-          <h2>Very Valley Center</h2>
-          <p class="section__lede">What&rsquo;s happening, where the locals go, and who you should know.</p>
-        </header>
+        <h2 class="section__title">Very Valley Center</h2>
+        <p class="section__lede">What&rsquo;s happening, where the locals go, and who you should know.</p>
 
         <div class="hub">
-          <!-- Events -->
-          <article class="hub__card hub__card--events">
+          <div class="hub__col">
             <h3>Events</h3>
             <!-- PLACEHOLDER EVENTS: confirm names, add real dates and details. Do not publish invented dates. -->
             <ul class="events">
               <li class="event" data-placeholder>
-                <span class="event__date">Date<br>TBA</span>
-                <span class="event__info">
-                  <strong>Western Days Parade</strong>
-                  <span>Add this year&rsquo;s date and details.</span>
-                </span>
+                <span class="event__date">Date TBA</span>
+                <strong>Western Days Parade</strong>
+                <span>Add this year&rsquo;s date and details.</span>
               </li>
               <li class="event" data-placeholder>
-                <span class="event__date">Date<br>TBA</span>
-                <span class="event__info">
-                  <strong>Bates Nut Farm</strong>
-                  <span>Add the next seasonal event and dates.</span>
-                </span>
+                <span class="event__date">Date TBA</span>
+                <strong>Bates Nut Farm</strong>
+                <span>Add the next seasonal event and dates.</span>
               </li>
               <li class="event" data-placeholder>
-                <span class="event__date">Date<br>TBA</span>
-                <span class="event__info">
-                  <strong>Event placeholder</strong>
-                  <span>Add a real local event here.</span>
-                </span>
+                <span class="event__date">Date TBA</span>
+                <strong>Event placeholder</strong>
+                <span>Add a real local event here.</span>
               </li>
             </ul>
-          </article>
+          </div>
 
-          <!-- Locals Guide -->
-          <article class="hub__card hub__card--guide">
+          <div class="hub__col">
             <h3>The Locals Guide</h3>
             <p>Valley Center the way people who live here know it. Take the three-question quiz and I&rsquo;ll point you to a starting place.</p>
             <div class="hub__actions">
               <a class="btn btn--gold" href="#locals-quiz">Take the quiz</a>
-              <a class="link-arrow link-arrow--light" href="#contact" data-interest="guide">Just send me the guide</a>
+              <a class="text-link text-link--light" href="#contact" data-interest="guide">Just send me the guide</a>
             </div>
-          </article>
+          </div>
 
-          <!-- Local spotlight -->
-          <article class="hub__card hub__card--spotlight">
+          <div class="hub__col">
             <h3>Local Spotlight</h3>
             <!-- PHOTO PLACEHOLDER + PLACEHOLDER COPY: feature a real local business or place, with permission. -->
-            <figure class="ph ph--wide ph--on-green" role="img" aria-label="Photo placeholder: local spotlight">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Local spotlight</span>
+            <figure class="ph ph--dark ph--wide" role="img" aria-label="Photo placeholder: local spotlight">
+              <span>Photo placeholder: local spotlight</span>
             </figure>
             <p data-placeholder-text>Spotlight placeholder. A real Valley Center business or place goes here, in its own words.</p>
-            <a class="link-arrow link-arrow--light" href="#contact" data-interest="spotlight">Suggest a local to spotlight</a>
-          </article>
+            <a class="text-link text-link--light" href="#contact" data-interest="spotlight">Suggest a local to spotlight</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ============ 6. COUNTRY PROPERTY FILES ============ -->
-    <section class="section section--cream" id="property-files">
+    <section class="section" id="property-files">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Listings</p>
-          <h2>Country Property Files</h2>
-          <p class="section__lede">Every file leads with the real address, the price, and the specs. No &ldquo;call for details.&rdquo;</p>
-        </header>
+        <h2 class="section__title">Country Property Files</h2>
+        <p class="section__lede">Every file leads with the real address, the price, and the specs. No &ldquo;call for details.&rdquo;</p>
 
         <!--
-          PLACEHOLDER FILES. Replace each card with a real listing only:
+          PLACEHOLDER FILES. Replace each file with a real listing only:
           real street address, real list price, real specs. Never invent a listing.
           Copy rule: describe what the property offers. Never say who it is for.
         -->
         <div class="files">
           <article class="file" data-placeholder>
-            <span class="file__tab">File 01</span>
-            <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Listing photo</span>
-            </figure>
-            <div class="file__body">
-              <p class="file__status">Placeholder &middot; awaiting a real listing</p>
+            <div class="file__sheet">
+              <p class="file__status">Placeholder, awaiting a real listing</p>
               <h3 class="file__address">Street address, Valley Center, CA</h3>
               <p class="file__price">List price</p>
+              <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
+                <span>Photo placeholder: listing photo</span>
+              </figure>
               <dl class="file__specs">
                 <div><dt>Beds</dt><dd>&mdash;</dd></div>
                 <div><dt>Baths</dt><dd>&mdash;</dd></div>
                 <div><dt>Sq&nbsp;ft</dt><dd>&mdash;</dd></div>
                 <div><dt>Acres</dt><dd>&mdash;</dd></div>
               </dl>
-              <p class="file__offers"><span>What it offers</span> One or two plain sentences about the property itself.</p>
+              <p class="file__offers"><strong>What it offers:</strong> One or two plain sentences about the property itself.</p>
             </div>
           </article>
 
           <article class="file" data-placeholder>
-            <span class="file__tab">File 02</span>
-            <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Listing photo</span>
-            </figure>
-            <div class="file__body">
-              <p class="file__status">Placeholder &middot; awaiting a real listing</p>
+            <div class="file__sheet">
+              <p class="file__status">Placeholder, awaiting a real listing</p>
               <h3 class="file__address">Street address, Valley Center, CA</h3>
               <p class="file__price">List price</p>
+              <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
+                <span>Photo placeholder: listing photo</span>
+              </figure>
               <dl class="file__specs">
                 <div><dt>Beds</dt><dd>&mdash;</dd></div>
                 <div><dt>Baths</dt><dd>&mdash;</dd></div>
                 <div><dt>Sq&nbsp;ft</dt><dd>&mdash;</dd></div>
                 <div><dt>Acres</dt><dd>&mdash;</dd></div>
               </dl>
-              <p class="file__offers"><span>What it offers</span> One or two plain sentences about the property itself.</p>
+              <p class="file__offers"><strong>What it offers:</strong> One or two plain sentences about the property itself.</p>
             </div>
           </article>
 
           <article class="file" data-placeholder>
-            <span class="file__tab">File 03</span>
-            <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Listing photo</span>
-            </figure>
-            <div class="file__body">
-              <p class="file__status">Placeholder &middot; awaiting a real listing</p>
+            <div class="file__sheet">
+              <p class="file__status">Placeholder, awaiting a real listing</p>
               <h3 class="file__address">Street address, Pauma Valley, CA</h3>
               <p class="file__price">List price</p>
+              <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: listing photo">
+                <span>Photo placeholder: listing photo</span>
+              </figure>
               <dl class="file__specs">
                 <div><dt>Beds</dt><dd>&mdash;</dd></div>
                 <div><dt>Baths</dt><dd>&mdash;</dd></div>
                 <div><dt>Sq&nbsp;ft</dt><dd>&mdash;</dd></div>
                 <div><dt>Acres</dt><dd>&mdash;</dd></div>
               </dl>
-              <p class="file__offers"><span>What it offers</span> One or two plain sentences about the property itself.</p>
+              <p class="file__offers"><strong>What it offers:</strong> One or two plain sentences about the property itself.</p>
             </div>
           </article>
         </div>
@@ -348,64 +301,51 @@
     <!-- ============ 7. BROWSE BY INTENT ============ -->
     <section class="section section--sand" id="browse">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Browse by intent</p>
-          <h2>Tell me what you&rsquo;re looking for.</h2>
-          <p class="section__lede">Pick one and I&rsquo;ll send you what&rsquo;s actually available.</p>
-        </header>
+        <h2 class="section__title">Tell me what you&rsquo;re looking for.</h2>
+        <p class="section__lede">Pick one and I&rsquo;ll send you what&rsquo;s actually available.</p>
 
         <div class="intents">
           <a class="intent" href="#contact" data-interest="homes">
             <!-- PHOTO PLACEHOLDER -->
             <figure class="ph ph--tile" role="img" aria-label="Photo placeholder: a Valley Center home">
-              <span class="ph__tag">Photo placeholder</span>
+              <span>Photo placeholder</span>
             </figure>
-            <span class="intent__body">
-              <strong>Homes</strong>
-              <span>Houses with room around them.</span>
-            </span>
+            <strong>Homes</strong>
+            <span>Houses with room around them.</span>
           </a>
           <a class="intent" href="#contact" data-interest="land">
-            <figure class="media media--tile">
-              <img class="media__fill" src="assets/img/land-view.jpg" width="720" height="540" loading="lazy" decoding="async"
+            <figure class="intent__img">
+              <img src="assets/img/land-view.jpg" width="720" height="540" loading="lazy" decoding="async"
                    alt="Open land with chaparral and yucca, and mountains in the distance">
             </figure>
-            <span class="intent__body">
-              <strong>Land</strong>
-              <span>Lots and acreage, with the water, access, and zoning questions asked early.</span>
-            </span>
+            <strong>Land</strong>
+            <span>Lots and acreage, with the water, access, and zoning questions asked early.</span>
           </a>
           <a class="intent" href="#contact" data-interest="horse">
-            <figure class="media media--tile">
-              <img class="media__fill" src="assets/img/christina-horse.jpg" width="800" height="600" loading="lazy" decoding="async"
+            <figure class="intent__img">
+              <img src="assets/img/christina-horse.jpg" width="800" height="600" loading="lazy" decoding="async"
                    alt="Christina in a western hat greeting a horse over a corral rail">
             </figure>
-            <span class="intent__body">
-              <strong>Horse Property</strong>
-              <span>Usable land, barns, arenas, and fencing, described by what&rsquo;s actually there.</span>
-            </span>
+            <strong>Horse Property</strong>
+            <span>Usable land, barns, arenas, and fencing, described by what&rsquo;s actually there.</span>
           </a>
           <a class="intent" href="#contact" data-interest="pauma">
+            <!-- PHOTO PLACEHOLDER -->
             <figure class="ph ph--tile" role="img" aria-label="Photo placeholder: Pauma Valley">
-              <span class="ph__tag">Photo placeholder</span>
+              <span>Photo placeholder</span>
             </figure>
-            <span class="intent__body">
-              <strong>Pauma Valley</strong>
-              <span>Homes, groves, and acreage next door in Pauma Valley.</span>
-            </span>
+            <strong>Pauma Valley</strong>
+            <span>Homes, groves, and acreage next door in Pauma Valley.</span>
           </a>
         </div>
       </div>
     </section>
 
     <!-- ============ 8. SOLD STORIES & REVIEWS ============ -->
-    <section class="section section--cream" id="sold-stories">
+    <section class="section" id="sold-stories">
       <div class="wrap">
-        <header class="section__head">
-          <p class="eyebrow">Sold stories &amp; reviews</p>
-          <h2>In their words, not mine.</h2>
-          <p class="section__lede">Every review here is copied word for word from Google. Nothing edited, nothing invented.</p>
-        </header>
+        <h2 class="section__title">In their words, not mine.</h2>
+        <p class="section__lede">Every review here is copied word for word from Google. Nothing edited, nothing invented.</p>
 
         <!--
           PLACEHOLDER REVIEWS. Paste real Google reviews only, word for word,
@@ -414,25 +354,22 @@
         -->
         <div class="reviews">
           <figure class="review" data-placeholder>
-            <span class="review__mark" aria-hidden="true">&ldquo;</span>
             <blockquote>Google review placeholder. Paste a real review here, word for word.</blockquote>
-            <figcaption>Reviewer name &middot; Google review &middot; date</figcaption>
+            <figcaption>Reviewer name, Google review, date</figcaption>
           </figure>
           <figure class="review" data-placeholder>
-            <span class="review__mark" aria-hidden="true">&ldquo;</span>
             <blockquote>Google review placeholder. Paste a real review here, word for word.</blockquote>
-            <figcaption>Reviewer name &middot; Google review &middot; date</figcaption>
+            <figcaption>Reviewer name, Google review, date</figcaption>
           </figure>
           <figure class="review" data-placeholder>
-            <span class="review__mark" aria-hidden="true">&ldquo;</span>
             <blockquote>Google review placeholder. Paste a real review here, word for word.</blockquote>
-            <figcaption>Reviewer name &middot; Google review &middot; date</figcaption>
+            <figcaption>Reviewer name, Google review, date</figcaption>
           </figure>
         </div>
 
         <!-- Shown only when GOOGLE_REVIEWS_URL is set in js/main.js -->
         <p class="reviews__more" hidden>
-          <a class="link-arrow" data-google-reviews href="#" target="_blank" rel="noopener">Read all reviews on Google</a>
+          <a class="text-link" data-google-reviews href="#" target="_blank" rel="noopener">Read all reviews on Google</a>
         </p>
 
         <!--
@@ -441,27 +378,21 @@
         -->
         <h3 class="subhead">Sold stories</h3>
         <div class="sold">
-          <article class="sold__card" data-placeholder>
+          <article class="sold__item" data-placeholder>
             <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: sold property">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Sold property</span>
+              <span>Photo placeholder: sold property</span>
             </figure>
-            <div class="sold__body">
-              <p class="file__status">Placeholder &middot; awaiting a real sale</p>
-              <h4>Street address, Valley Center</h4>
-              <p>Sold story placeholder. What the property offered, what the plan was, and how it closed.</p>
-            </div>
+            <p class="file__status">Placeholder, awaiting a real sale</p>
+            <h4>Street address, Valley Center</h4>
+            <p>Sold story placeholder. What the property offered, what the plan was, and how it closed.</p>
           </article>
-          <article class="sold__card" data-placeholder>
+          <article class="sold__item" data-placeholder>
             <figure class="ph ph--photo" role="img" aria-label="Photo placeholder: sold property">
-              <span class="ph__tag">Photo placeholder</span>
-              <span class="ph__note">Sold property</span>
+              <span>Photo placeholder: sold property</span>
             </figure>
-            <div class="sold__body">
-              <p class="file__status">Placeholder &middot; awaiting a real sale</p>
-              <h4>Street address, Pauma Valley</h4>
-              <p>Sold story placeholder. What the property offered, what the plan was, and how it closed.</p>
-            </div>
+            <p class="file__status">Placeholder, awaiting a real sale</p>
+            <h4>Street address, Pauma Valley</h4>
+            <p>Sold story placeholder. What the property offered, what the plan was, and how it closed.</p>
           </article>
         </div>
       </div>
@@ -470,18 +401,16 @@
     <!-- ============ 9. MEET CHRISTINA ============ -->
     <section class="section section--green" id="meet-christina">
       <div class="wrap meet">
-        <figure class="media media--arch media--framed meet__photo">
-          <img class="media__fill" src="assets/img/christina-pumpkin-wagon.jpg" width="900" height="1125" loading="lazy" decoding="async"
+        <figure class="meet__photo">
+          <img src="assets/img/christina-pumpkin-wagon.jpg" width="900" height="1125" loading="lazy" decoding="async"
                alt="Christina sitting on an old farm wagon surrounded by pumpkins and hay bales">
         </figure>
 
         <div class="meet__copy">
-          <p class="eyebrow eyebrow--gold">Meet Christina</p>
-          <h2>Your broker is also your neighbor.</h2>
+          <h2 class="section__title">Your broker is also your neighbor.</h2>
           <p>I&rsquo;m Christina Holly Juarez. I&rsquo;m a San Diego native, I&rsquo;ve been licensed since 2007 and a broker since 2014, and Valley Center is where I live.</p>
           <p>My map of North County is a personal one: Escondido, Bates Nut Farm, the Western Days parade. This is home to me, not a territory.</p>
           <p>I run this brokerage solo on purpose. When you call, you get me. I&rsquo;m the one who walks your property, negotiates your sale, and sends your Sunday update.</p>
-          <p class="meet__tagline">Small by design. Personal by default.</p>
 
           <dl class="meet__facts">
             <div><dt>Licensed</dt><dd>2007</dd></div>
@@ -496,13 +425,10 @@
     </section>
 
     <!-- ============ 10a. LOCALS GUIDE QUIZ ============ -->
-    <section class="section section--cream" id="locals-quiz">
+    <section class="section" id="locals-quiz">
       <div class="wrap wrap--narrow">
-        <header class="section__head">
-          <p class="eyebrow">The Locals Guide quiz</p>
-          <h2>Three questions. One good starting point.</h2>
-          <p class="section__lede">Takes about thirty seconds.</p>
-        </header>
+        <h2 class="section__title">Three questions. One good starting point.</h2>
+        <p class="section__lede">The Locals Guide quiz takes about thirty seconds.</p>
 
         <div class="quiz" data-quiz>
           <noscript><p class="quiz__noscript">The quiz needs JavaScript. You can skip it and call or text (760) 919-2548.</p></noscript>
@@ -540,27 +466,23 @@
           </fieldset>
 
           <div class="quiz__result" data-quiz-result hidden tabindex="-1">
-            <p class="eyebrow">Your starting point</p>
             <h3 data-quiz-title></h3>
             <p data-quiz-text></p>
             <div class="quiz__actions">
               <a class="btn btn--green" href="#contact" data-quiz-cta>Send me the Locals Guide</a>
-              <button class="link-arrow" type="button" data-quiz-reset>Start over</button>
+              <button class="text-link" type="button" data-quiz-reset>Start over</button>
             </div>
           </div>
 
-          <button class="quiz__back" type="button" data-quiz-back hidden>&larr; Back</button>
+          <button class="quiz__back" type="button" data-quiz-back hidden>Back</button>
         </div>
       </div>
     </section>
 
     <!-- ============ 10b. FAQ ============ -->
     <section class="section section--sand" id="faq">
-      <div class="wrap wrap--narrow">
-        <header class="section__head">
-          <p class="eyebrow">FAQ</p>
-          <h2>Fair questions, straight answers.</h2>
-        </header>
+      <div class="wrap faq-layout">
+        <h2 class="section__title">Fair questions, straight answers.</h2>
 
         <div class="faq">
           <details>
@@ -600,118 +522,114 @@
     </section>
 
     <!-- ============ 10c. CONTACT ============ -->
-    <section class="section section--cream contact-section" id="contact">
-      <div class="wrap">
-        <div class="contact">
-          <div class="contact__intro">
-            <p class="eyebrow eyebrow--gold">Contact</p>
-            <h2>Book a Seller Call.</h2>
-            <p>Or just call or text. Either way, you get me.</p>
+    <section class="section section--green" id="contact">
+      <div class="wrap contact">
+        <div class="contact__intro">
+          <h2 class="section__title">Book a Seller Call.</h2>
+          <p>Or just call or text. Either way, you get me.</p>
 
-            <a class="contact__phone" href="tel:+17609192548">(760) 919-2548</a>
+          <a class="contact__phone" href="tel:+17609192548">(760) 919-2548</a>
 
-            <div class="contact__quick">
-              <a class="btn btn--gold" href="tel:+17609192548">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.4 1.5v3A2.5 2.5 0 0 1 18.5 20 15.5 15.5 0 0 1 4 5.5 2.5 2.5 0 0 1 6.6 3Z"/></svg>
-                Call
-              </a>
-              <a class="btn btn--ghost-light" href="sms:+17609192548">
-                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z"/></svg>
-                Text
-              </a>
-            </div>
-
-            <p class="contact__license">Christina Holly Juarez, Broker<br>CA DRE #01832633<br>Valley Center &amp; Pauma Valley, CA</p>
+          <div class="contact__quick">
+            <a class="btn btn--gold" href="tel:+17609192548">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.4 1.5v3A2.5 2.5 0 0 1 18.5 20 15.5 15.5 0 0 1 4 5.5 2.5 2.5 0 0 1 6.6 3Z"/></svg>
+              Call
+            </a>
+            <a class="btn btn--line-light" href="sms:+17609192548">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z"/></svg>
+              Text
+            </a>
           </div>
 
-          <form class="contact__form" data-contact-form novalidate>
-            <div class="field">
-              <label for="cf-topic">What can I help with?</label>
-              <select id="cf-topic" name="topic">
-                <option value="seller-call">Book a Seller Call</option>
-                <option value="homes">Buying: Homes</option>
-                <option value="land">Buying: Land</option>
-                <option value="horse">Buying: Horse Property</option>
-                <option value="pauma">Buying: Pauma Valley</option>
-                <option value="guide">Send me the Locals Guide</option>
-                <option value="spotlight">Suggest a Local Spotlight</option>
-                <option value="other">Something else</option>
-              </select>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label for="cf-name">Your name</label>
-                <input id="cf-name" name="name" type="text" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label for="cf-phone">Best phone number</label>
-                <input id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
-              </div>
-            </div>
-            <div class="field">
-              <label for="cf-property">Property address or area <span class="field__opt">optional</span></label>
-              <input id="cf-property" name="property" type="text" autocomplete="street-address">
-            </div>
-            <div class="field">
-              <label for="cf-message">Anything I should know? <span class="field__opt">optional</span></label>
-              <textarea id="cf-message" name="message" rows="3"></textarea>
-            </div>
-
-            <p class="form__error" data-form-error role="alert" hidden></p>
-
-            <button class="btn btn--green btn--block" type="submit" data-form-submit>Send my request</button>
-            <p class="form__fine">I&rsquo;ll get back to you personally. No call centers, no auto-dialers.</p>
-
-            <div class="form__ready" data-form-ready hidden tabindex="-1">
-              <h3>Your note is ready.</h3>
-              <p>Text it to me at (760) 919-2548 and I&rsquo;ll reply personally.</p>
-              <pre data-form-preview></pre>
-              <div class="form__ready-actions">
-                <a class="btn btn--green" data-form-sms href="sms:+17609192548">Open in Messages</a>
-                <button class="btn btn--outline" type="button" data-form-copy>Copy note</button>
-              </div>
-            </div>
-
-            <div class="form__sent" data-form-sent hidden tabindex="-1">
-              <h3>Got it. Thank you.</h3>
-              <p>I&rsquo;ll be in touch within one business day. If it&rsquo;s urgent, call or text (760) 919-2548.</p>
-            </div>
-          </form>
+          <p class="contact__license">Christina Holly Juarez, Broker<br>CA DRE #01832633<br>Valley Center &amp; Pauma Valley, CA</p>
         </div>
+
+        <form class="contact__form" data-contact-form novalidate>
+          <div class="field">
+            <label for="cf-topic">What can I help with?</label>
+            <select id="cf-topic" name="topic">
+              <option value="seller-call">Book a Seller Call</option>
+              <option value="homes">Buying: Homes</option>
+              <option value="land">Buying: Land</option>
+              <option value="horse">Buying: Horse Property</option>
+              <option value="pauma">Buying: Pauma Valley</option>
+              <option value="guide">Send me the Locals Guide</option>
+              <option value="spotlight">Suggest a Local Spotlight</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Best phone number</label>
+              <input id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-property">Property address or area <span class="field__opt">optional</span></label>
+            <input id="cf-property" name="property" type="text" autocomplete="street-address">
+          </div>
+          <div class="field">
+            <label for="cf-message">Anything I should know? <span class="field__opt">optional</span></label>
+            <textarea id="cf-message" name="message" rows="3"></textarea>
+          </div>
+
+          <p class="form__error" data-form-error role="alert" hidden></p>
+
+          <button class="btn btn--green btn--block" type="submit" data-form-submit>Send my request</button>
+          <p class="form__fine">I&rsquo;ll get back to you personally. No call centers, no auto-dialers.</p>
+
+          <div class="form__ready" data-form-ready hidden tabindex="-1">
+            <h3>Your note is ready.</h3>
+            <p>Text it to me at (760) 919-2548 and I&rsquo;ll reply personally.</p>
+            <pre data-form-preview></pre>
+            <div class="form__ready-actions">
+              <a class="btn btn--green" data-form-sms href="sms:+17609192548">Open in Messages</a>
+              <button class="btn btn--outline" type="button" data-form-copy>Copy note</button>
+            </div>
+          </div>
+
+          <div class="form__sent" data-form-sent hidden tabindex="-1">
+            <h3>Got it. Thank you.</h3>
+            <p>I&rsquo;ll be in touch within one business day. If it&rsquo;s urgent, call or text (760) 919-2548.</p>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <div class="wrap site-footer__grid">
-      <div>
-        <p class="site-footer__name">Christina Holly Juarez Realty</p>
-        <p class="site-footer__tagline">Small by design. Personal by default.</p>
+    <div class="wrap">
+      <p class="site-footer__tagline">Small by design. Personal by default.</p>
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__name">Christina Holly Juarez Realty</p>
+          <p>Christina Holly Juarez, Broker<br>CA DRE #01832633</p>
+          <p>Valley Center &amp; Pauma Valley, California</p>
+        </div>
+        <ul class="site-footer__links">
+          <li><a href="tel:+17609192548">Call (760) 919-2548</a></li>
+          <li><a href="sms:+17609192548">Text (760) 919-2548</a></li>
+          <li><a href="#contact" data-book>Book a Seller Call</a></li>
+          <li><a href="https://www.instagram.com/christinahollyjuarez/" target="_blank" rel="noopener">Instagram @christinahollyjuarez</a></li>
+        </ul>
       </div>
-      <div>
-        <p>Christina Holly Juarez, Broker<br>CA DRE #01832633</p>
-        <p>Valley Center &amp; Pauma Valley, California</p>
+      <div class="site-footer__legal">
+        <p class="eho">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 9v2h2v9h16v-9h2V9L12 3Zm5 15H7v-8l5-3 5 3v8Zm-7-5h4v1.5h-4V13Zm0 2.5h4V17h-4v-1.5Z"/></svg>
+          Equal Housing Opportunity
+        </p>
+        <p>&copy; 2026 Christina Holly Juarez Realty. All rights reserved.</p>
       </div>
-      <ul class="site-footer__links">
-        <li><a href="tel:+17609192548">Call (760) 919-2548</a></li>
-        <li><a href="sms:+17609192548">Text (760) 919-2548</a></li>
-        <li><a href="#contact" data-book>Book a Seller Call</a></li>
-        <li><a href="https://www.instagram.com/christinahollyjuarez/" target="_blank" rel="noopener">Instagram @christinahollyjuarez</a></li>
-      </ul>
-    </div>
-    <div class="wrap site-footer__legal">
-      <p class="eho">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 9v2h2v9h16v-9h2V9L12 3Zm5 15H7v-8l5-3 5 3v8Zm-7-5h4v1.5h-4V13Zm0 2.5h4V17h-4v-1.5Z"/></svg>
-        Equal Housing Opportunity
-      </p>
-      <p>&copy; 2026 Christina Holly Juarez Realty. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- ============ STICKY ACTION BAR ============ -->
+  <!-- ============ STICKY ACTION BAR (phones) ============ -->
   <nav class="actionbar" aria-label="Quick contact">
-    <span class="actionbar__note">Christina Holly Juarez, Broker &middot; (760)&nbsp;919-2548</span>
     <a class="actionbar__btn" href="tel:+17609192548">
       <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h3l1.5 4.5-2 1.5a12 12 0 0 0 6 6l1.5-2 4.4 1.5v3A2.5 2.5 0 0 1 18.5 20 15.5 15.5 0 0 1 4 5.5 2.5 2.5 0 0 1 6.6 3Z"/></svg>
       <span>Call</span>
@@ -721,7 +639,6 @@
       <span>Text</span>
     </a>
     <a class="actionbar__btn actionbar__btn--primary" href="#contact" data-book>
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/></svg>
       <span>Book a Seller Call</span>
     </a>
   </nav>

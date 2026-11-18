@@ -356,19 +356,4 @@
       if (auto && auto.catch) auto.catch(function () {});
     }
   }
-
-  /* ---------- Gentle scroll reveal ---------- */
-  var revealables = $$('.section__head, .sellers-intro__photo, .door, .step, .hub__card, .file, .intent, .review, .sold__card, .meet__copy, .quiz, .contact');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if ('IntersectionObserver' in window && !reduce) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-    revealables.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
-  }
 })();
